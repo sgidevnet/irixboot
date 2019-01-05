@@ -1,6 +1,10 @@
 irixboot
 ========
 
+* forked into SGIDEV GH ORG just for posterity
+
+
+
 irixboot is designed to quickly configure a disposable VM to boot a specific version of the SGI IRIX installer over the network on an SGI machine without a whole lot of fuss. There is no need to manually extract CD images from an IRIX machine or compile kernels to get EFS support, configure BOOTP, etc.
 
 This sets up some configuration in the VM that is not secure or may interfere with other network services (e.g. DHCP) so please don't leave it running long-term. I recommend only attaching the network interface to an isolated network for this purpose and then `vagrant halt` or `vagrant destroy` the VM when you are done installing.
